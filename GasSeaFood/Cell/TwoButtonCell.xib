@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="127" id="Edh-54-1Db" customClass="TwoButtonCell" customModule="GasSeaFood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="489" height="127"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Edh-54-1Db" id="x1I-xb-FHS">
+                <rect key="frame" x="0.0" y="0.0" width="489" height="127"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="aBa-T6-SfA">
+                        <rect key="frame" x="20" y="5" width="449" height="117"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hqi-4f-vlY">
+                                <rect key="frame" x="0.0" y="33.666666666666664" width="204.66666666666666" height="49.999999999999993"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="yvu-Kg-o4t"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mam-jE-yFD">
+                                <rect key="frame" x="244.66666666666669" y="33.666666666666664" width="204.33333333333331" height="49.999999999999993"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="saV-YC-ROl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="aBa-T6-SfA" secondAttribute="trailing" constant="20" id="7c1-LE-lfN"/>
+                    <constraint firstItem="aBa-T6-SfA" firstAttribute="top" secondItem="x1I-xb-FHS" secondAttribute="top" constant="5" id="dzr-wS-cQF"/>
+                    <constraint firstItem="aBa-T6-SfA" firstAttribute="leading" secondItem="x1I-xb-FHS" secondAttribute="leading" constant="20" id="mfK-qq-TSU"/>
+                    <constraint firstAttribute="bottom" secondItem="aBa-T6-SfA" secondAttribute="bottom" constant="5" id="whk-Ht-lts"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftButton" destination="Hqi-4f-vlY" id="q5e-vA-O4a"/>
+                <outlet property="rightButton" destination="mam-jE-yFD" id="Dzj-RR-8Q8"/>
+            </connections>
+            <point key="canvasLocation" x="203.81679389312976" y="17.95774647887324"/>
+        </tableViewCell>
+    </objects>
+</document>

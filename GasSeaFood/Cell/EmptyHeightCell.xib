@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="233" id="IYv-za-O1j" customClass="EmptyHeightCell" customModule="GasSeaFood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="532" height="233"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IYv-za-O1j" id="Lja-yb-Y5M">
+                <rect key="frame" x="0.0" y="0.0" width="532" height="233"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nmr-7i-7xn">
+                        <rect key="frame" x="20" y="0.0" width="492" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUI-iZ-NQ3">
+                                <rect key="frame" x="0.0" y="0.0" width="492" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VUI-iZ-NQ3" firstAttribute="top" secondItem="Nmr-7i-7xn" secondAttribute="top" id="4kE-Cx-E2E"/>
+                            <constraint firstAttribute="height" constant="50" id="5ic-xM-dgX"/>
+                            <constraint firstAttribute="bottom" secondItem="VUI-iZ-NQ3" secondAttribute="bottom" id="FYV-ll-0bJ"/>
+                            <constraint firstItem="VUI-iZ-NQ3" firstAttribute="leading" secondItem="Nmr-7i-7xn" secondAttribute="leading" id="OUc-7R-e8P"/>
+                            <constraint firstAttribute="trailing" secondItem="VUI-iZ-NQ3" secondAttribute="trailing" id="vJh-xa-nB3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Nmr-7i-7xn" secondAttribute="trailing" constant="20" id="H1s-5B-gkn"/>
+                    <constraint firstAttribute="bottom" secondItem="Nmr-7i-7xn" secondAttribute="bottom" id="PGQ-Th-m0d"/>
+                    <constraint firstItem="Nmr-7i-7xn" firstAttribute="leading" secondItem="Lja-yb-Y5M" secondAttribute="leading" constant="20" id="Rhr-5j-aKF"/>
+                    <constraint firstItem="Nmr-7i-7xn" firstAttribute="top" secondItem="Lja-yb-Y5M" secondAttribute="top" id="tCz-ql-rgI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backView" destination="Nmr-7i-7xn" id="5zH-SW-Os1"/>
+                <outlet property="cellViewHeight" destination="5ic-xM-dgX" id="9Mg-TX-zGT"/>
+                <outlet property="titleLabel" destination="VUI-iZ-NQ3" id="3Dt-Cc-BBF"/>
+            </connections>
+            <point key="canvasLocation" x="235.11450381679387" y="55.281690140845072"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

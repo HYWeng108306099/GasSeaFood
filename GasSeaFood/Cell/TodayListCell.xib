@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="204" id="hka-UI-6ai" customClass="TodayListCell" customModule="GasSeaFood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="463" height="204"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hka-UI-6ai" id="GML-eS-Fx1">
+                <rect key="frame" x="0.0" y="0.0" width="463" height="204"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qq6-e0-yAd">
+                        <rect key="frame" x="20" y="10" width="423" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWf-kv-nfI">
+                                <rect key="frame" x="15" y="0.0" width="408" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Yd7-Ko-yaD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tWf-kv-nfI" secondAttribute="trailing" id="FhZ-DH-oCN"/>
+                            <constraint firstItem="tWf-kv-nfI" firstAttribute="top" secondItem="Qq6-e0-yAd" secondAttribute="top" id="H8r-4u-dUE"/>
+                            <constraint firstItem="tWf-kv-nfI" firstAttribute="leading" secondItem="Qq6-e0-yAd" secondAttribute="leading" constant="15" id="pjY-gD-CWT"/>
+                            <constraint firstAttribute="bottom" secondItem="tWf-kv-nfI" secondAttribute="bottom" id="tjh-Kb-bir"/>
+                            <constraint firstAttribute="height" constant="70" id="zag-L1-U56"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Qq6-e0-yAd" firstAttribute="leading" secondItem="GML-eS-Fx1" secondAttribute="leading" constant="20" id="2ad-u2-u20"/>
+                    <constraint firstAttribute="bottom" secondItem="Qq6-e0-yAd" secondAttribute="bottom" constant="10" id="dUi-vS-AIX"/>
+                    <constraint firstAttribute="trailing" secondItem="Qq6-e0-yAd" secondAttribute="trailing" constant="20" id="xdc-Rq-7QX"/>
+                    <constraint firstItem="Qq6-e0-yAd" firstAttribute="top" secondItem="GML-eS-Fx1" secondAttribute="top" constant="10" id="yw5-47-lCz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="insideView" destination="Qq6-e0-yAd" id="cR4-TX-Vp4"/>
+                <outlet property="titleLabel" destination="tWf-kv-nfI" id="i58-o5-7Ky"/>
+            </connections>
+            <point key="canvasLocation" x="183.96946564885496" y="45.070422535211272"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

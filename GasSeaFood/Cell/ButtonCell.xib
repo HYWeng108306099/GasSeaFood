@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="115" id="LTz-pg-Fa6" customClass="ButtonCell" customModule="GasSeaFood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="442" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LTz-pg-Fa6" id="jkS-11-Cmq">
+                <rect key="frame" x="0.0" y="0.0" width="442" height="115"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THR-QM-JWQ">
+                        <rect key="frame" x="50" y="10" width="342" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="YaF-Qx-vVk"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="THR-QM-JWQ" secondAttribute="bottom" constant="10" id="5v2-nV-xsQ"/>
+                    <constraint firstItem="THR-QM-JWQ" firstAttribute="top" secondItem="jkS-11-Cmq" secondAttribute="top" constant="10" id="h7k-ZN-8kF"/>
+                    <constraint firstAttribute="trailing" secondItem="THR-QM-JWQ" secondAttribute="trailing" constant="50" id="u0z-OS-1pO"/>
+                    <constraint firstItem="THR-QM-JWQ" firstAttribute="leading" secondItem="jkS-11-Cmq" secondAttribute="leading" constant="50" id="uLD-cC-9GH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="button" destination="THR-QM-JWQ" id="nwT-Sg-hQj"/>
+                <outlet property="buttonheight" destination="YaF-Qx-vVk" id="lvH-P9-ono"/>
+            </connections>
+            <point key="canvasLocation" x="316.03053435114504" y="27.816901408450704"/>
+        </tableViewCell>
+    </objects>
+</document>
